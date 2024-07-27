@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teclado Virtual con Imágenes</title>
+    <link rel="stylesheet" href="Teclado.css">
+</head>
+<header>
+  <div class="container-navbar">
+      <nav class="navbar container">
+          
+          <ul class="menu">
+            <li><a href="nuevo1.html">Inicio</a></li>
+          	<li><a href="2.html">Conoser</a></li>
+						<li><a href="Lecciones.html">Lecciones</a></li>
+						<li><a href="Videos.html">videos</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						
+              
+          
+          </ul>
+
+      
+      </nav>
+      
+  </div>
+
+</header>
+
+<body>
+  <button id="instruccionesBtn">Instrucciones</button>
+<div id="instruccionesModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Instrucciones</h2>
+       >
+        <ul>
+            <li>Haz clic en las teclas para escribir.</li>
+            <li>Usa la tecla de borrar para eliminar el último carácter.</li>
+            <li>La barra espaciadora añade un espacio.</li>
+            <li>Guiate de las señas para escribir.</li>
+            <li>Si no ves bien las imagenes en la parte de abajo se encuntra un carrusel para verlas mejor.</li>
+        </ul>
+    </div>
+</div>
+    <input type="text" id="output" readonly>
+    <div class="keyboard">
+        <div class="key" data-key="Q"><img src="img/q.png" alt="Q"></div>
+        <div class="key" data-key="W"><img src="img/w.png" alt="W"></div>
+        <div class="key" data-key="E"><img src="img/e.png" alt="E"></div>
+        <div class="key" data-key="R"><img src="img/r.png" alt="R"></div>
+        <div class="key" data-key="T"><img src="img/t.png" alt="T"></div>
+        <div class="key" data-key="Y"><img src="img/y.png" alt="Y"></div>
+        <div class="key" data-key="U"><img src="img/u.png" alt="U"></div>
+        <div class="key" data-key="I"><img src="img/i.png" alt="I"></div>
+        <div class="key" data-key="O"><img src="img/o.png" alt="O"></div>
+        <div class="key" data-key="P"><img src="img/p.png" alt="P"></div>
+        <div class="key" data-key="A"><img src="img/a.png" alt="A"></div>
+        <div class="key" data-key="S"><img src="img/s.png" alt="S"></div>
+        <div class="key" data-key="D"><img src="img/d.png" alt="D"></div>
+        <div class="key" data-key="F"><img src="img/f.png" alt="F"></div>
+        <div class="key" data-key="G"><img src="img/g.png" alt="G"></div>
+        <div class="key" data-key="H"><img src="img/h.png" alt="H"></div>
+        <div class="key" data-key="J"><img src="img/j.png" alt="J"></div>
+        <div class="key" data-key="K"><img src="img/k.png" alt="K"></div>
+        <div class="key" data-key="L"><img src="img/l.png" alt="L"></div>
+        <div class="key" data-key="Ñ"><img src="img/ñ.png" alt="Ñ"></div>
+        <div class="key" data-key="Z"><img src="img/z.png" alt="Z"></div>
+        <div class="key" data-key="X"><img src="img/x.png" alt="X"></div>
+        <div class="key" data-key="C"><img src="img/c.png" alt="C"></div>
+        <div class="key" data-key="V"><img src="img/v.png" alt="V"></div>
+        <div class="key" data-key="B"><img src="img/b.png" alt="B"></div>
+        <div class="key" data-key="N"><img src="img/n.png" alt="N"></div>
+        <div class="key" data-key="M"><img src="img/m.png" alt="M"></div>
+        <div class="key" data-key=","><img src="img/coma.jpeg" alt=","></div>
+        <div class="key" data-key="."><img src="img/punto.jpeg" alt="."></div>
+        <div class="key" data-key="-"><img src="img/guion.jpeg" alt="-"></div>
+        <div class="key backspace" data-key="backspace"><img src="img/borrar.jpeg" alt="Borrar"></div>
+        <div class="key space" data-key=" "><img src="img/Espacio.jpeg" alt="Espacio"></div>
+    </div>
+    <script src="Teclado.js"></script>
+
+    <div class="carousel-container">
+      <div class="carousel">
+        <img src="img/a.png" alt="Letra a" class="carousel-item">
+        <img src="img/b.png" alt="Letra b" class="carousel-item">
+        <img src="img/c.png" alt="Letra c" class="carousel-item">
+        <img src="img/d.png" alt="Letra d" class="carousel-item">
+        <img src="img/e.png" alt="Letra e" class="carousel-item">
+        <img src="img/f.png" alt="Letra f" class="carousel-item">
+        <img src="img/g.png" alt="Letra g" class="carousel-item">
+        <img src="img/h.png" alt="Letra h" class="carousel-item">
+        <img src="img/i.png" alt="Letra i" class="carousel-item">
+        <img src="img/j.png" alt="Letra j" class="carousel-item">
+        <img src="img/k.png" alt="Letra k" class="carousel-item">
+        <img src="img/l.png" alt="Letra l" class="carousel-item">
+        <img src="img/m.png" alt="Letra m" class="carousel-item">
+        <img src="img/n.png" alt="Letra n" class="carousel-item">
+        <img src="img/ñ.png" alt="Letra ñ" class="carousel-item">
+        <img src="img/o.png" alt="Letra o" class="carousel-item">
+        <img src="img/p.png" alt="Letra p" class="carousel-item">
+        <img src="img/q.png" alt="Letra q" class="carousel-item">
+        <img src="img/r.png" alt="Letra r" class="carousel-item">
+        <img src="img/s.png" alt="Letra s" class="carousel-item">
+        <img src="img/t.png" alt="Letra t" class="carousel-item">
+        <img src="img/u.png" alt="Letra u" class="carousel-item">
+        <img src="img/v.png" alt="Letra v" class="carousel-item">
+        <img src="img/w.png" alt="Letra w" class="carousel-item">
+        <img src="img/x.png" alt="Letra x" class="carousel-item">
+        <img src="img/y.png" alt="Letra y" class="carousel-item">
+        <img src="img/z.png" alt="Letra z" class="carousel-item">
+      </div>
+      <button class="carousel-button prev">&lt;</button>
+      <button class="carousel-button next">&gt;</button>
+    </div>
+  <br><br> <br><br> <br>
+</body>
+</html>
