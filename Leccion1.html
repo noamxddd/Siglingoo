@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguaje de Señas - Básico</title>
+    <link rel="stylesheet" href="Leccion1.css">
+</head>
+
+    <header>
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <ul class="menu">
+                    <li><a href="Lecciones.html">Regresar</a></li>
+                    
+                 
+                    
+                
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+<body>
+    <h1>Leccion 1: Facil</h1>
+   
+    <button id="instructionsBtn">Instrucciones</button>
+    <div class="word-container">
+        <img src="img/c.png" alt="Letra C">
+        <img src="img/a.png" alt="Letra A">
+        <img src="img/s.png" alt="Letra S">
+        <img src="img/a.png" alt="Letra A">
+    </div>
+    <div class="word-display">
+        Palabra formada: CASA
+    </div>
+    <div class="word-container">
+        <img src="img/p.png" alt="Letra P">
+        <img src="img/e.png" alt="Letra E">
+        <img src="img/r.png" alt="Letra R">
+        <img src="img/r.png" alt="Letra R">
+        <img src="img/o.png" alt="Letra O">
+    </div>
+    <div class="word-display">
+        Palabra formada: PERRO
+    </div>
+    <div class="word-container">
+        <img src="img/s.png" alt="Letra S">
+        <img src="img/o.png" alt="Letra O">
+        <img src="img/l.png" alt="Letra L">
+    </div>
+    <div class="word-display">
+        Palabra formada: SOL
+    </div>
+    <div class="word-container">
+        <img src="img/g.png" alt="Letra G">
+        <img src="img/a.png" alt="Letra A">
+        <img src="img/t.png" alt="Letra T">
+        <img src="img/o.png" alt="Letra O">
+    </div>
+    <div class="word-display">
+        Palabra formada: GATO
+    </div>
+    <div class="word-container">
+        <img src="img/l.png" alt="Letra L">
+        <img src="img/u.png" alt="Letra U">
+        <img src="img/n.png" alt="Letra N">
+        <img src="img/a.png" alt="Letra A">
+    </div>
+    <div class="word-display">
+        Palabra formada: LUNA
+    </div>
+    <div class="word-container">
+        <img src="img/f.png" alt="Letra F">
+        <img src="img/l.png" alt="Letra L">
+        <img src="img/o.png" alt="Letra O">
+        <img src="img/r.png" alt="Letra R">
+    </div>
+    <div class="word-display">
+        Palabra formada: FLOR
+    </div>
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+    </div>
+    <div id="instructionsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Instrucciones</h2>
+           
+            <ul>
+                <li>Observa las imágenes que representan letras en lenguaje de señas.</li>
+                <li>Cada conjunto de imágenes forma una palabra.</li>
+                <li>Haz clic en cualquier imagen para verla en tamaño grande.</li>
+                <li>Practica formando las palabras con tus propias manos.</li>
+                <li>Ojito con saltarse las lecciones hee .</li>
+            </ul>
+        </div>
+    </div>
+    <div class="noa">
+       
+          
+        <div class="video-noa">
+            <video id="signVideo" controls>
+                <source src="img/Lengua de Señas Mexicana hola.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+        <div class="buttons">
+            <button class="button">gracias</button>
+            <button class="button">adios</button>
+            <button class="button">hola</button>
+            <button class="button">yo soy</button>
+        </div>
+       
+        <div id="celebration" style="display: none;">🎉 ¡Correcto! 🎉</div>
+    </div>
+    
+</body>
+<script src="Leccion1.js" defer></script>
+</html>

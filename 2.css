@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(150deg, #00125c,#a30c5d);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 59%;
+    max-width:900px;
+    background:linear-gradient(150deg, #e500fa,#004e60);
+    border-radius: 20px;
+    padding: 240px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
+}
+
+
+header{
+    background-color: #000;
+    padding: 20px;
+    width: 96%;
+    border-radius: 30px;
+  
+    
+    
+    
+      }
+
+.app-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+}
+
+.home-icon {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 70px;
+    
+   
+}
+
+.button {
+    background-color: #8e44ad;
+    color: white;
+    width: 200px;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index:1 ;
+}
+
+.button-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.button-icon {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.button-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.button-subtext {
+    font-size: 12px;
+}
+
+.footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.ktu-logo {
+    width: 60px;
+    height: auto;
+}
+
+/* Añadir imágenes de fondo a los botones */
+#teclado {
+    background-image: url('teclado-bg.jpg');
+}
+
+#lecciones {
+    background-image: url('lecciones-bg.jpg');
+}
+
+#videos {
+    background-image: url('videos-bg.jpg');
+}
+
+@media (max-width: 600px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        width: 120px;
+        height: 120px;
+    }
+}
