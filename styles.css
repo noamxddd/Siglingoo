@@ -1,0 +1,194 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #b6b6b6;
+    color: #ffffff;
+    display: block;
+    background: #000026;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #155844, #22224f);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: 1.2px;
+}
+
+p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+/* Section Styles */
+.section-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin: 1.5rem auto;
+    width: 90%;
+    max-width: 1500px;
+    background: rgb(0, 0, 0);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: #009688;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.text-content {
+    width: 60%;
+}
+
+.image-content {
+    width: 35%;
+}
+
+.image-content img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+.toggle-btn {
+    background: linear-gradient(135deg, #00796b, #004d40);
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-top: 1rem;
+}
+
+.toggle-btn:hover {
+    background: linear-gradient(135deg, #004d40, #00251a);
+    transform: scale(1.05);
+}
+
+/* Hidden Sections */
+.hidden {
+    display: none;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animations */
+.section-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-content.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+/* Carousel Styles */
+.carousel {
+    position: relative;
+    max-width: 80%;
+    margin: 2rem auto;
+    overflow: hidden; /* Recorta las imágenes adyacentes */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    height: 400px; /* Asegura una altura fija para el carrusel */
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 50%; /* El ancho del contenedor es 300% para contener tres imágenes */
+    height: 100%;
+}
+
+.carousel-images img {
+   
+    flex: 1 0 100%; /* Hace que solo una imagen sea visible a la vez */
+    border-radius: 10px;
+}
+
+/* Carousel Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* Carousel Responsiveness */
+@media (max-width: 768px) {
+    .carousel-images img {
+        width: 100%;
+    }
+
+    .prev, .next {
+        padding: 8px;
+    }
+}

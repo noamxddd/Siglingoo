@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cáncer de Pulmón - Información</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    </head>
+<body>
+    <header>
+        <h1>El Cáncer de Pulmón no es un juego </h1>
+        
+    </header>
+
+    <section id="intro" class="section-content">
+        <div class="text-content">
+                        <h2>¿Qué es?
+                        </h2>
+            <p>El cáncer de pulmón es una de las principales causas de muerte por cáncer a nivel mundial. Se caracteriza por el crecimiento descontrolado de células anormales en los pulmones, lo que puede dificultar la respiración y, en casos avanzados, puede diseminarse a otras partes del cuerpo.</p>
+        </div>
+        <div class="image-content">
+            <img src="img/primer-plano-mano-hombre-sosteniendo-cigarrillos-rotos-aislados-sobre-fondo-blanco.jpg" alt="Imagen sobre cáncer de pulmón">
+        </div>
+        <button class="toggle-btn" onclick="toggleContent('factores-riesgo')">Ver más</button>
+    </section>
+
+    <section id="factores-riesgo" class="section-content hidden">
+        <div class="text-content">
+            <h2>Factores de Riesgo</h2>
+            <ul>
+                <li><strong>Tabaco:</strong> El consumo de cigarrillos es la principal causa del cáncer de pulmón, representando el 85% de los casos.</li>
+                <li><strong>Exposición a sustancias tóxicas:</strong> Productos químicos como el asbesto, el radón y la contaminación del aire aumentan el riesgo.</li>
+                <li><strong>Factores genéticos:</strong> Algunas personas pueden ser más propensas a desarrollar cáncer de pulmón debido a predisposiciones genéticas.</li>
+            </ul>
+        </div>
+        <div class="image-content">
+            <img src="img/images (2).jpeg" alt="Factores de riesgo del cáncer de pulmón">
+        </div>
+        <button class="toggle-btn" onclick="toggleContent('factores-riesgo')">Ver menos</button>
+    </section>
+
+    <section id="tipos" class="section-content">
+        <div class="text-content">
+            <h2>Tipos de Cáncer de Pulmón</h2>
+            <p>Existen dos tipos principales de cáncer de pulmón:</p>
+            <ul>
+                <li><strong>Cáncer de pulmón de células pequeñas (CPCP):</strong> Más agresivo, generalmente asociado con fumadores, pero responde bien a la quimioterapia.</li>
+                <li><strong>Cáncer de pulmón de células no pequeñas (CPCNP):</strong> Es el tipo más común, con subtipos como adenocarcinoma, carcinoma de células escamosas y carcinoma de células grandes.</li>
+            </ul>
+        </div>
+        <div class="image-content">
+            <img src="img/descarga (1).jpeg" alt="Tipos de cáncer de pulmón">
+        </div>
+        <button class="toggle-btn" onclick="toggleContent('sintomas')">Ver más</button>
+    </section>
+
+    <section id="sintomas" class="section-content hidden">
+        <div class="text-content">
+            <h2>Síntomas</h2>
+            <p>Los síntomas suelen aparecer en etapas avanzadas e incluyen:</p>
+            <ul>
+                <li>Tos persistente</li>
+                <li>Dolor en el pecho</li>
+                <li>Dificultad para respirar</li>
+                <li>Pérdida de peso inexplicada</li>
+                <li>Tos con sangre</li>
+            </ul>
+        </div>
+        <div class="image-content">
+            <img src="img/images (3).jpeg" alt="Síntomas del cáncer de pulmón">
+        </div>
+        <button class="toggle-btn" onclick="toggleContent('sintomas')">Ver menos</button>
+    </section>
+
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="img/descarga.jpeg" alt="Imagen 1">
+            <img src="img/images.jpeg" alt="Imagen 2">
+            <img src="img/images (1).jpeg" alt="Imagen 3">
+            <img src="img/lung_cancer_sharing.jpg" alt="Imagen 4">
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Información sobre Cáncer de Pulmón</p>
+    </footer>
+</body>
+</html>
